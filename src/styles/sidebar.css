@@ -1,0 +1,36 @@
+
+.sidebar-navigation{
+    background-image: url('../assets/images/bg-sidebar-mobile.svg');
+    min-height: 172px;
+}
+
+.sidebar-list{ 
+    width: 100%;
+    list-style-type: none;
+    color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    position: absolute;
+    top:2rem
+}
+
+.sidebar-link{
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-link:hover{
+    background: var(--Pastel-blue);
+    color: var(--Marine-blue);
+    cursor: pointer;
+}
