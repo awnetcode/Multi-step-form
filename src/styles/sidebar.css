@@ -19,8 +19,7 @@
 .sidebar-link{
     width: 2rem;
     height: 2rem;
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
     border: 1px solid var(--White);
     border-radius: 50%;
     text-align: center;
@@ -33,4 +32,5 @@
     background: var(--Pastel-blue);
     color: var(--Marine-blue);
     cursor: pointer;
+    border: 1px solid var(--Pastel-blue);
 }
