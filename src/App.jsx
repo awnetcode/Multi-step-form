@@ -1,12 +1,15 @@
+import { useState } from 'react';
+
 import './App.css';
 import Sidebar from './components/sidebar';
-import Form from './components/form';
+import MainContent from './components/MainContent';
 
 function App() {
+  const [activeStep, setStepActive] = useState('not_found');
   return (
     <>
-    <Sidebar />
-    <Form />
+    <Sidebar setStepActive={setStepActive}/>
+    <MainContent activeStep={activeStep}/>
     </>
   )
 }

@@ -1,13 +1,3 @@
-*{
-    /* border: 1px solid red; */
-}
-
-.form-container{
-    position: absolute;
-    top: 5rem;
-    padding: 1rem;
-
-}
 
 .step1{
     padding: 2rem 1.5rem;
@@ -54,17 +44,4 @@
     font-weight: 600;
     color: var(--Marine-blue);
     opacity: .7;
-}
-
-.form-btn{
-    background: var(--Marine-blue);
-    padding: .7rem 1rem;
-    font-size: .9rem;
-    font-weight: 600;
-    color: var(--Magnolia);
-    border: none;
-    border-radius: 5px;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
 }

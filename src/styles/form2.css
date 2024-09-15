@@ -1,0 +1,28 @@
+.input-radio{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+}
+
+.select-option{
+    border: 1px solid red;
+    width: 100%;
+
+}
+
+label {
+    font-family: Calibri, Helvetica, sans-serif;
+    display: inline-block;  
+    cursor: pointer;  
+    text-shadow: 0 0 1px #fff, 0 0 1px rgba(0,0,0,0.6);
+    position: relative;  
+    padding-left: 15px;  
+    margin-right: 10px;  
+    font-size: 0.9em;  
+  }
+
+  input[type=radio] {  
+    
+    width: 100%;
+    height: 100%;  
+}

@@ -1,6 +1,8 @@
-import '../styles/form.css';
+import '../styles/form1.css';
 
-const Form = function(){
+import FormButton from './Form-button';
+
+const Form1 = function(){
     return(
         <>
         <main className="form-container">
@@ -21,11 +23,11 @@ const Form = function(){
                 <label htmlFor="" className="input-name">Phone Number</label><br></br>
                 <input type="text" className="form-field" name='phone' placeholder='e.g. +1 234 567 890'/><br></br>
                 </div>
-                <button type='submit' className='form-btn'>Next Step</button>
+                <FormButton/>
             </form>
         </main>
         </>
     )
 };
 
-export default Form;
+export default Form1;
