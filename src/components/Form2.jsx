@@ -15,34 +15,59 @@ const Form2 = function(){
                 <h1>Select your plan</h1>
                 <h3>You have the option of monthly or yearly billing.</h3>
             </div>
-
-            <fieldset className='input-radio'>
-  <legend>Select a maintenance drone:</legend>
-
+<fieldset className='input-radio'>
   <div className='select-option'>
-    <input type="radio" id="huey" name="drone" value="Arcade" checked />
+    <input type="radio" id="arcade" name="drone" value="Arcade" checked />
+    <label htmlFor="arcade">
     <img src={arcade} alt="icon" />
-    <label htmlFor="huey">Arcade</label>
+    <div className="option-info">
+      <span className="option-name">Arcade</span>
+      <span className="option-price">$9/mo</span>
+      <span className="discount-info"></span>
+    </div>
+    </label>
   </div>
-
   <div className='select-option'>
-    <input type="radio" id="dewey" name="drone" value="dewey" />
+  <input type="radio" id="advanced" name="drone" value="advanced" />
+    <label htmlFor="advanced">
     <img src={advanced} alt="icon" />
-    <label htmlFor="dewey">Advanced</label>
+    <div className="option-info">
+      <span className="option-name">Advanced</span>
+      <span className="option-price">$12/mo</span>
+      <span className="discount-info"></span>
+    </div>
+    </label>
   </div>
 
   <div className='select-option'>
-    <input type="radio" id="louie" name="drone" value="louie" />
+    <input type="radio" id="pro" name="drone" value="pro"/>
+    <label htmlFor="pro">
     <img src={pro} alt="icon" />
-    <label htmlFor="louie">Pro</label>
+    <div className="option-info">
+      <span className="option-name">Pro</span>
+      <span className="option-price">$15/mo</span>
+      <span className="discount-info"></span>
+    </div>
+    </label>
   </div>
+  <div className="switch-container">
+  <span className='option'>Monthly</span>
+  <div className="toggle-switch">
+    <input type="checkbox" id="toggle" className="toggle-checkbox"></input>   
+    <label htmlFor="toggle" className="toggle-label"> 
+    <span className="toggle-option"></span> 
+    <span className="toggle-option"></span>
+        <span className="toggle-handle"></span>
+    </label> 
+</div>
+<span className='option'>Yearly</span>
+  </div>
+
 </fieldset>
-            <div className="step2-part">
-            </div>
-            <div className="step2-part"></div>
-            <div className="step2-part"></div>
+
+
             <FormButton/>
-        </form>
+</form>
         </>
     )
 }
