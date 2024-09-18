@@ -13,11 +13,11 @@ const MainContent = ({activeStep})=>{
             content = <Form1/>;
             break;
         case '2':
-            content = <Form2/>
+            content = <Form2/>;
             break;
 
     default:
-        content = 'Strona na razie jest w budowie, wiec wiesz co masz robić aby działało.'
+        content = <Form1/>;
     }
 
     return(

@@ -6,6 +6,7 @@ import advanced from '../assets/images/icon-advanced.svg';
 import pro from '../assets/images/icon-pro.svg';
 
 import FormButton from './Form-button';
+import Switch from './Switch';
 
 const Form2 = function(){
     return(
@@ -17,7 +18,7 @@ const Form2 = function(){
             </div>
 <fieldset className='input-radio'>
   <div className='select-option'>
-    <input type="radio" id="arcade" name="drone" value="Arcade" checked />
+    <input type="radio" id="arcade" name="drone" value="Arcade"/>
     <label htmlFor="arcade">
     <img src={arcade} alt="icon" />
     <div className="option-info">
@@ -38,7 +39,6 @@ const Form2 = function(){
     </div>
     </label>
   </div>
-
   <div className='select-option'>
     <input type="radio" id="pro" name="drone" value="pro"/>
     <label htmlFor="pro">
@@ -50,22 +50,8 @@ const Form2 = function(){
     </div>
     </label>
   </div>
-  <div className="switch-container">
-  <span className='option'>Monthly</span>
-  <div className="toggle-switch">
-    <input type="checkbox" id="toggle" className="toggle-checkbox"></input>   
-    <label htmlFor="toggle" className="toggle-label"> 
-    <span className="toggle-option"></span> 
-    <span className="toggle-option"></span>
-        <span className="toggle-handle"></span>
-    </label> 
-</div>
-<span className='option'>Yearly</span>
-  </div>
-
+<Switch />
 </fieldset>
-
-
             <FormButton/>
 </form>
         </>
