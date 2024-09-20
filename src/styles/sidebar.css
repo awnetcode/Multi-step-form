@@ -1,7 +1,6 @@
 
 .sidebar-navigation{
     background-image: url('../assets/images/bg-sidebar-mobile.svg');
-    min-height: 172px;
 }
 
 .sidebar-list{ 
@@ -33,4 +32,22 @@
     color: var(--Marine-blue);
     cursor: pointer;
     border: 1px solid var(--Pastel-blue);
+}
+
+@media only screen and (min-width:800px){
+    .sidebar-navigation{
+        grid-area: nav;
+        background-image: url('../assets/images/bg-sidebar-desktop.svg');
+        background-size: cover;
+
+    }
+
+    .sidebar-list{
+        padding: 3rem;
+        height: 100%;
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 3rem;
+    }
 }

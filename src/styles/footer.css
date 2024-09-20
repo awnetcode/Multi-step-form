@@ -1,0 +1,19 @@
+.page-footer{
+    background-color: var(--Marine-blue);
+    color: var(--Magnolia);
+    text-align: center;
+    padding: 1rem;
+    opacity: .8;
+    display: none;
+}
+
+@media screen and (min-width:800px){
+    .page-footer{
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: footer;
+        z-index: -0;
+    }
+}

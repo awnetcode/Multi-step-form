@@ -6,8 +6,8 @@
     color: var(--Magnolia);
     border: none;
     border-radius: 5px;
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 6rem;
     cursor: pointer;
 }

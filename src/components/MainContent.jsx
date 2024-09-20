@@ -22,7 +22,7 @@ const MainContent = ({activeStep})=>{
 
     return(
         <>
-        <main className="form-container">
+        <main className="form-area">
     {content}
         </main>    
         </>

@@ -5,8 +5,8 @@ import FormButton from './Form-button';
 const Form1 = function(){
     return(
         <>
-        <main className="form-container">
-            <form action="#" className="step1">
+        <div className="form-container">
+        <form action="#" className="step1">
                 <div className="form-title">
                     <h1>Personal info</h1>
                     <h3>Please provide your name, email adress, and phone number.</h3>
@@ -25,7 +25,8 @@ const Form1 = function(){
                 </div>
                 <FormButton/>
             </form>
-        </main>
+        </div>
+
         </>
     )
 };
