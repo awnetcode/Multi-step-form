@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
+
 import '../styles/form-button.css'
 
-const FormButton = function(){
+const FormButton = function({btnText}){
     return(
         <>
-        <button type='submit' className='form-btn'>Next Step</button>
+        <button type='submit' className='form-btn'>{btnText}</button>
         </>
     )
 }

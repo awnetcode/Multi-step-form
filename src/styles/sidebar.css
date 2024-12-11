@@ -39,6 +39,7 @@
         grid-area: nav;
         background-image: url('../assets/images/bg-sidebar-desktop.svg');
         background-size: cover;
+        border-radius: 1rem;
 
     }
 
@@ -48,6 +49,7 @@
         position: static;
         flex-direction: column;
         align-items: flex-start;
-        row-gap: 3rem;
+        justify-content: flex-start;
+        row-gap: 2.5rem;
     }
 }

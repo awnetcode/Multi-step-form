@@ -5,8 +5,7 @@ import FormButton from './Form-button';
 const Form1 = function(){
     return(
         <>
-        <div className="form-container">
-        <form action="#" className="step1">
+        <form action="#" className="step-form">
                 <div className="form-title">
                     <h1>Personal info</h1>
                     <h3>Please provide your name, email adress, and phone number.</h3>
@@ -23,10 +22,8 @@ const Form1 = function(){
                 <label htmlFor="" className="input-name">Phone Number</label><br></br>
                 <input type="text" className="form-field" name='phone' placeholder='e.g. +1 234 567 890'/><br></br>
                 </div>
-                <FormButton/>
+                <FormButton btnText={'Next Step'}/>
             </form>
-        </div>
-
         </>
     )
 };

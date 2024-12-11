@@ -11,8 +11,7 @@ import Switch from './Switch';
 const Form2 = function(){
     return(
         <>
-        <div className="form-container">
-        <form action="#" className="step1">
+        <form action="#" className="step-form">
             <div className="form-title">
                 <h1>Select your plan</h1>
                 <h3>You have the option of monthly or yearly billing.</h3>
@@ -53,10 +52,8 @@ const Form2 = function(){
   </div>
 <Switch />
 </fieldset>
-            <FormButton/>
+            <FormButton btnText={'Next Step'}/>
 </form>
-        </div>
-
         </>
     )
 }
