@@ -8,7 +8,8 @@ import pro from '../assets/images/icon-pro.svg';
 import FormButton from './Form-button';
 import Switch from './Switch';
 
-const Form2 = function(){
+// eslint-disable-next-line react/prop-types
+const Form2 = function({setStepActive}){
     return(
         <>
         <form action="#" className="step-form">
@@ -52,7 +53,7 @@ const Form2 = function(){
   </div>
 <Switch />
 </fieldset>
-            <FormButton btnText={'Next Step'}/>
+<FormButton btnText={'Next Step'} onClick={()=>setStepActive('3')} />
 </form>
         </>
     )

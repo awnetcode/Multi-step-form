@@ -2,10 +2,10 @@
 
 import '../styles/form-button.css'
 
-const FormButton = function({btnText}){
+const FormButton = function({btnText, onClick}){
     return(
         <>
-        <button type='submit' className='form-btn'>{btnText}</button>
+        <button type='button' onClick={onClick} className='form-btn'>{btnText}</button>
         </>
     )
 }

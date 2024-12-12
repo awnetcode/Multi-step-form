@@ -3,7 +3,8 @@ import '../styles/form3.css';
 
 import FormButton from './Form-button';
 
-const Form3 = () =>{
+// eslint-disable-next-line react/prop-types
+const Form3 = ({setStepActive}) =>{
     return(
         <>
             <form action="#" className="step-form">
@@ -42,7 +43,7 @@ const Form3 = () =>{
                 <span className="add-on-price">+$2/mo</span>
             </div>         
             </form>
-            <FormButton btnText={'Next Step'}/>
+            <FormButton btnText={'Next Step'} onClick={()=>setStepActive('4')} />
         </>
     )
 }

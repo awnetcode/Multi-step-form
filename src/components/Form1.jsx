@@ -2,7 +2,9 @@ import '../styles/form1.css';
 
 import FormButton from './Form-button';
 
-const Form1 = function(){
+
+// eslint-disable-next-line react/prop-types
+const Form1 = function({setStepActive}){
     return(
         <>
         <form action="#" className="step-form">
@@ -22,7 +24,7 @@ const Form1 = function(){
                 <label htmlFor="" className="input-name">Phone Number</label><br></br>
                 <input type="text" className="form-field" name='phone' placeholder='e.g. +1 234 567 890'/><br></br>
                 </div>
-                <FormButton btnText={'Next Step'}/>
+                <FormButton btnText={'Next Step'} onClick={()=>setStepActive('2')} />
             </form>
         </>
     )

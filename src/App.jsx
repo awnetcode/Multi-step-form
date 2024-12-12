@@ -6,12 +6,12 @@ import MainContent from './components/MainContent';
 //import Footer from './components/Footer';
 
 function App() {
-  const [activeStep, setStepActive] = useState('not_found');
+  const [activeStep, setStepActive] = useState('1');
   return (
     <>
     <div id="container">
     <Sidebar setStepActive={setStepActive}/>
-    <MainContent activeStep={activeStep}/>
+    <MainContent activeStep={activeStep} setStepActive={setStepActive}/>
     {/* <Footer /> */}
     </div>
     </>
